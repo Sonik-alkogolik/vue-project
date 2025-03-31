@@ -1,0 +1,29 @@
+{
+    "menu": [
+      {
+        "name": "Главная",
+        "url": "/",
+        "icon_link": "/icons/home.svg"
+      },
+      {
+        "name": "О нас",
+        "url": "/about",
+        "icon_link": "/icons/info.svg"
+      },
+      {
+        "name": "Услуги",
+        "url": "/services",
+        "icon_link": "/icons/services.svg"
+      },
+      {
+        "name": "Блог",
+        "url": "/blog",
+        "icon_link": "/icons/blog.svg"
+      },
+      {
+        "name": "Контакты",
+        "url": "/contacts",
+        "icon_link": "/icons/contacts.svg"
+      }
+    ]
+  }
