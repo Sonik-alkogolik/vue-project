@@ -1,16 +1,15 @@
 <template>
-  <NavMenu />
-  <BlogPost />
+  <ImagesPost />
 </template>
 
 <script>
-import NavMenu from './components/NavMenu.vue'
-import BlogPost from './components/BlogPost.vue'
+// import NavMenu from './components/NavMenu.vue'
+// import BlogPost from './components/BlogPost.vue'
+import ImagesPost from './components/ImagesPost.vue'
 export default {
   name: 'App',
   components: {
-    NavMenu,
-    BlogPost
+    ImagesPost,
   }
 }
 </script>
