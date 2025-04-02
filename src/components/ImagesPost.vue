@@ -21,7 +21,7 @@
           :key="user.id"
           >
            <button
-            @click ="user_active = user.id"
+             @click ="user_active = user.id"
            >
             {{ user.name }}
           </button>
@@ -81,10 +81,15 @@ export default {
           alert("Выберите пользователя");
           //return;
         } else {
-            //console.log(this.user_active);
+            console.log(this.user_active);
         }
         const user = this.users.find((k) => k.id === this.user_active);
-        // console.log(user);
+        if(user) {
+            // console.log(selectedPhoto.url);
+            // console.log(user.selectedPhotos);
+            user.selectedPhotos.push(selectedPhoto.url);            
+          }
+        
 
     },
   },
@@ -106,6 +111,10 @@ export default {
   max-width: 200px;
   width: 100%;
   justify-content: space-between;
+}
+.wrapper.user img {
+  max-width: 400px;
+  width: 100%;
 }
 .wrapper.img {
   max-width: 400px;
